@@ -1,0 +1,1 @@
+{{ .OTP }} is your OTP / verification code for {{ .Namespace }} and is valid for {{ .OTPTTL.Minutes }} minutes. Do not share this with anyone. -Zerodha

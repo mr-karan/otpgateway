@@ -120,7 +120,7 @@ func (k *Kaleyra) Push(otp models.OTP, subject string, body []byte) error {
 		p.Set("template_id", k.cfg.SMSTemplateID)
 		p.Set("body", string(body))
 	} else {
-		p.Set("type", "template")
+		p.Set("type", "authenticationtemplate")
 		p.Set("channel", "whatsapp")
 		p.Set("from", k.cfg.Sender)
 		p.Set("template_name", k.cfg.TemplateName)
